@@ -1335,8 +1335,8 @@ pre code {
   }
 
   .col-lg-8 {
-    flex: 0 0 66.6666666667%;
-    max-width: 66.6666666667%;
+    flex: 1 0 66.6666666667%;
+    max-width: 95.00%;
   }
 
   .col-lg-9 {
@@ -10114,6 +10114,7 @@ header.masthead h1 {
   }
   header.masthead p {
     font-size: 1.15rem;
+    font-style: italic;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -10163,4 +10164,20 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+
+
+.cstm-p {
+  text-align: justify;
+  font-style: italic;
+}
+
+.cstm-img {
+    width: 160px;
+    height: 170px;
+    margin-block-end: auto;
 }
