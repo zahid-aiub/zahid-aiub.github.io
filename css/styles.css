@@ -10177,7 +10177,25 @@ header.masthead h1 {
 }
 
 .cstm-img {
-    width: 160px;
-    height: 170px;
-    margin-block-end: auto;
+    margin-top: 95px;
+}
+
+#img-div , #about-div {
+  display:inline-block;
+}
+
+.cstm-icon {
+  font-size: 45px;
+}
+
+.project-txt {
+    font-size: 15px;
+    font-style: normal;
+    text-align: justify
+}
+
+.project-name-li {
+    font-weight: 600;
+    font-style: italic;
+    font-size: large;
 }
