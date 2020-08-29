@@ -10199,3 +10199,8 @@ header.masthead h1 {
     font-style: italic;
     font-size: large;
 }
+
+.cstm-img-div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
