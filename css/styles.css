@@ -130,6 +130,153 @@ body {
 
 /*End About Section*/
 
+
+/* Start Skill Section*/
+
+/* Unit-based Progress Bar Styles */
+.unit-progress-bar {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  height: 12px;
+}
+
+.unit {
+  flex: 1;
+  height: 100%;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.unit.active {
+  background: linear-gradient(135deg, #d0a21a, #ffbf00);
+  box-shadow: 0 2px 4px rgba(244, 98, 58, 0.3);
+}
+
+.unit:not(.active) {
+  background-color: #e9ecef;
+  border: 1px solid #dee2e6;
+}
+
+/* Hover effects */
+.unit.active:hover {
+  transform: scaleY(1.2);
+  box-shadow: 0 4px 8px rgba(244, 98, 58, 0.4);
+}
+
+/* Rating number styling */
+.rating-number {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #f4623a;
+  min-width: 35px;
+  text-align: right;
+}
+
+/* Skill item styling */
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 0.95rem;
+}
+
+/* Animation for units */
+@keyframes fillUnit {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.unit.active {
+  animation: fillUnit 0.5s ease-out;
+}
+
+.unit.active:nth-child(1) { animation-delay: 0.1s; }
+.unit.active:nth-child(2) { animation-delay: 0.2s; }
+.unit.active:nth-child(3) { animation-delay: 0.3s; }
+.unit.active:nth-child(4) { animation-delay: 0.4s; }
+.unit.active:nth-child(5) { animation-delay: 0.5s; }
+
+/* Skill category styling */
+.skill-category {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-left: 4px solid #f4623a;
+}
+
+.skill-title {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .unit-progress-bar {
+    height: 10px;
+    gap: 3px;
+  }
+
+  .unit {
+    border-radius: 4px;
+  }
+
+  .skill-name {
+    font-size: 0.9rem;
+  }
+
+  .rating-number {
+    font-size: 0.8rem;
+  }
+}
+
+/* Separator Line for Skills Section */
+.skill-divider {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(90deg,
+  transparent 0%,
+  #f4623a 20%,
+  #f4623a 80%,
+  transparent 100%
+  );
+  margin: 3rem 0;
+  opacity: 0.7;
+}
+
+ /*.skill-divider {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+        #e9ecef 0%,
+        #f4623a 50%,
+        #e9ecef 100%
+    );
+    margin: 3rem 0;
+}*/
+
+ /*Or dotted separator
+ .skill-divider {
+    border: 0;
+    border-top: 2px dotted #f4623a;
+    margin: 3rem 0;
+    opacity: 0.5;
+} */
+
+/* ENd Skill Section*/
+
+
 .accordion-item {
   margin-bottom: 0.5rem;
   border: none;
