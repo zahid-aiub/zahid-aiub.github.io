@@ -255,26 +255,62 @@ body {
   opacity: 0.7;
 }
 
- /*.skill-divider {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(90deg,
-        #e9ecef 0%,
-        #f4623a 50%,
-        #e9ecef 100%
-    );
-    margin: 3rem 0;
-}*/
-
- /*Or dotted separator
- .skill-divider {
-    border: 0;
-    border-top: 2px dotted #f4623a;
-    margin: 3rem 0;
-    opacity: 0.5;
-} */
-
 /* ENd Skill Section*/
+
+
+/* Start Misc. Section*/
+
+/* Miscellaneous Skills Styles */
+.miscellaneous-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #d0a21a, #ffbf00);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #e74c3c, #f4623a);
+}
+
+/* Responsive design for miscellaneous skills */
+@media (max-width: 768px) {
+  .miscellaneous-skills {
+    gap: 0.6rem;
+    padding: 0.5rem;
+  }
+
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .miscellaneous-skills {
+    gap: 0.4rem;
+  }
+
+  .skill-tag {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ENd Misc. Section*/
 
 
 .accordion-item {
