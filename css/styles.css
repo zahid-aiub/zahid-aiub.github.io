@@ -221,6 +221,52 @@ body {
   font-size: 1.3rem;
 }
 
+/*Collapsable card scroll bar*/
+
+/* Fixed height accordion body with scroll */
+.accordion-body.cstm-font {
+  max-height: 450px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Custom scrollbar styling */
+.accordion-body.cstm-font::-webkit-scrollbar {
+  width: 6px;
+}
+
+.accordion-body.cstm-font::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.accordion-body.cstm-font::-webkit-scrollbar-thumb {
+  background: #f4623a;
+  border-radius: 10px;
+}
+
+.accordion-body.cstm-font::-webkit-scrollbar-thumb:hover {
+  background: #e74c3c;
+}
+
+/* Ensure proper spacing */
+.accordion-body.cstm-font ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-body.cstm-font h6 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+}
+
+.accordion-body.cstm-font h6:first-child {
+  margin-top: 0;
+}
+
+/*End Collapsable card scroll bar*/
+
 /* Responsive design */
 @media (max-width: 768px) {
   .unit-progress-bar {
@@ -311,6 +357,131 @@ body {
 }
 
 /* ENd Misc. Section*/
+/* Start Education Section*/
+
+/* Education Timeline Styles */
+.education-timeline {
+  position: relative;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #f4623a, #e74c3c);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: 3px solid #f4623a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-marker i {
+  font-size: 1.2rem;
+  color: #f4623a;
+}
+
+.timeline-content {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 4px solid #f4623a;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.degree-title {
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+  flex: 1;
+}
+
+.timeline-date {
+  background: #f4623a;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.institution-info, .location-info {
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.completed-status {
+  background: #e8f5e8;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-timeline::before {
+    left: 20px;
+  }
+
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-marker i {
+    font-size: 1rem;
+  }
+
+  .timeline-content {
+    margin-left: 1.5rem;
+    padding: 1rem;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .timeline-date {
+    margin-top: 0.5rem;
+    align-self: flex-start;
+  }
+}
+
+/* ENd Education Section*/
 
 
 .accordion-item {
@@ -327,7 +498,7 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   padding: 0.6rem 0.9rem;
-  background-color: #f8f9fa;
+  background-color: #fff6f2;
   border: 1.5px solid #f4623a;
   border-radius: 0.5rem;
   color: #000;
@@ -342,8 +513,8 @@ body {
 }
 
 .accordion-button:hover {
-  background-color: #fff6f2;
-  color: #f4623a;
+  background-color: #f17957;
+  color: #ffffff;
   border-color: #f4623a;
 }
 
@@ -370,6 +541,12 @@ body {
   color: #d94f29;
 }
 
+.project-link-disabled {
+  color: #6c757d;
+  text-decoration: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
 
 
 .accordion-body {
@@ -383,6 +560,13 @@ body {
 }
 .accordion-button:not(.collapsed) .rotate-icon {
   transform: rotate(90deg);
+}
+
+/*Custom font for some text*/
+
+.cstm-font {
+  font-family: auto, serif;
+  font-size: large;
 }
 
 
